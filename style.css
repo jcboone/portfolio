@@ -137,7 +137,40 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* gpt mod to stack overflow
+ */
 .imagecarousel {
+  position: relative;
+  height: 233px;
+  margin: 0 auto 30px; /* Center horizontally within the parent container */
+  display: flex;
+  overflow: hidden; /* Hide content that overflows the carousel bounds */
+  width: 100%; /* Match the parent container's width */
+  max-width: 500px; /* Optionally limit the maximum width */
+  gap: 20px;
+}
+
+.imagecarousel img {
+  margin: 0;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 500px)); /* Adjust width to match the carousel container */
+  }
+}
+
+
+/* .imagecarousel {
   position: relative;
   height: 233px;
   margin-bottom: 30px;
@@ -159,6 +192,6 @@ ul.main-menu li a.active {
   100% {
     transform: translateX(-50%);
   }
-}
+} */
 
 

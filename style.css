@@ -137,11 +137,30 @@ ul.main-menu li a.active {
   display:block;
 }
 
-<div class="imagecarousel">
-  <img src="https://images.pexels.com/photos/29736308/pexels-photo-29736308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+.imagecarousel {
+  position: relative;
+  height: 233px;
+  margin-bottom: 30px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
 
-  <img src="https://images.pexels.com/photos/29736304/pexels-photo-29736304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+.imagecarousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
 
-</div>
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
 
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 

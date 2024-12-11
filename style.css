@@ -144,15 +144,12 @@ ul.main-menu li a.active {
   display: flex;
   width: fit-content;
   gap: 20px;
+  animation: bannermove 50s linear infinite;
 }
 
 .imagecarousel img {
-  margin: 0px 0px;
+  margin: 0;
   box-shadow: 2px 2px 8px #8a8a8a;
-}
-
-.imagecarousel {
-  animation: bannermove 50s linear infinite;
 }
 
 @keyframes bannermove {
@@ -163,4 +160,5 @@ ul.main-menu li a.active {
     transform: translateX(-50%);
   }
 }
+
 

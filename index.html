@@ -10,15 +10,20 @@
     <link rel="icon" type="image/png" href="favicon.png">
   
     <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <!-- Reset default styles and add support for Google Fonts -->
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
    
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="flexslider.css">
+    
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>  
+    <script src="script.js"></script> 
+    <script src="jquery.flexslider-min.js"></script>
+ 
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
@@ -72,9 +77,60 @@
               
               <center>
               
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vREsXkeXLHwyY6Rc3vP8FcARRsLj3pNty8rtMmm4dPYIULg_jL3GcHf7zCpUFVKBUuXuaRdCDN9uL-x/embed?start=true&loop=false&delayms=3000" frameborder="0" width="530" height="349" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="flexslider carousel">
+                  <ul class="slides">
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736308/pexels-photo-29736308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736306/pexels-photo-29736306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736302/pexels-photo-29736302/free-photo-of-trail-closed-sign-with-caution-tape-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736298/pexels-photo-29736298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736295/pexels-photo-29736295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736294/pexels-photo-29736294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29736303/pexels-photo-29736303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29750662/pexels-photo-29750662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29750663/pexels-photo-29750663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29750664/pexels-photo-29750664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29750665/pexels-photo-29750665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <li>
+                      <img src="https://images.pexels.com/photos/29750666/pexels-photo-29750666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </li>
+                    <!-- items mirrored twice, total of 12 -->
+                  </ul>
+                </div>
 
               </center>
+
+              <script>
+                $(document).ready(function() {
+                    $('.flexslider').flexslider({
+                        animation: "slide", // or "fade"
+                        controlNav: true,   // Enable navigation dots
+                        directionNav: true  // Enable previous/next arrows
+                    });
+                });
+              </script>
+            
             
             
             </p>
